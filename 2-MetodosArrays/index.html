@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos para Arrays en JavaScript</title>
+    <style>
+        #display{
+            background-color: white;
+            border: 1px solid black;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="display"></div>
+
+    <script>
+        let cursos=["4eso","1eso","2eso","3eso"];
+/*        cursos.push("1smr");
+        cursos.unshift("1bach");
+        cursos.unshift("");
+        cursos.sort();
+*/
+        //cursos.reverse();
+        cursos.splice(2,1);
+        cursos=cursos.map(c => c + " Bosco")
+        
+        //alert(cursos.indexOf("1eso"));
+        
+        // for(let i =0  ; i <cursos.length;i++){
+        //    document.getElementById("display").innerHTML+=cursos[i]+"<br>";
+        // }
+        //cursos.pop();
+        
+
+        for( let curso of cursos){
+            document.getElementById("display").innerHTML+=curso+"<br>";
+        }
+
+    </script>
+</body>
+</html>
