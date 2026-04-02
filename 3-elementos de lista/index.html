@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos de lista</title>
+</head>
+
+<body>
+    <h1>Lista de Jugadores</h1>
+    <button id="boton">Cargar Lista Jugadores</button>
+    <ol id="lista-jugadores">
+
+    </ol>
+    <script>
+    document.getElementById("boton").addEventListener("click", cargarLista);
+
+        function cargarLista() {
+            document.getElementById("lista-jugadores").innerHTML = "";
+            let jugadores = ["MBappe", "butragueño", "Ronaldo", "Messi"];
+            for (let i = 0; i < jugadores.length; i++) {
+                let nuevoLi = document.createElement("li");
+                nuevoLi.innerHTML = jugadores[i];
+                nuevoLi.setAttribute("style", "color:purple");
+
+                document.getElementById("lista-jugadores").appendChild(nuevoLi)
+            }
+        }
+    </script>
+</body>
+
+</html>
