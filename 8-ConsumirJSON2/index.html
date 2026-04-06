@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cliente</h1>
+    <form action="">
+        <p><label for="">Nombre: <input type="text" name="nombre" id="nombre"></label></p>
+        <p><label for="">Apellido: <input type="text" name="apellido" id="apellido"></label></p>
+        <p><label for="">Edad: <input type="number" name="edad" id="edad"></label></p>
+        <p><label for="">Suscrito: <input type="checkbox" name="suscrito" id="suscrito"></label></p>
+        <p><label for="">Aficiones: <input type="text" name="aficiones" id="aficiones"></label></p>
+        <p><label for="">Calle: <input type="text" name="calle" id="calle"></label></p>
+    </form>
+
+
+    <script>
+        fetch('http://localhost:5500/8-ConsumirJSON2/miCliente.json')
+            .then(response => response.json())
+            .then(cliente => {
+                document.getElementById('nombre').value = cliente.nombre;
+                document.getElementById('apellido').value = cliente.apellido;
+                document.getElementById('edad').value = cliente.edad;  
+                if (cliente.suscrito) {
+                    document.getElementById("suscrito").setAttribute("checked", "checked");
+                }
+                for(let i = 0; i < cliente.aficiones.length; i++){
+                    if( i == cliente.aficiones.length - 1){
+                        document.getElementById("aficiones").value += cliente.aficiones[i];
+                    } else {
+                   document.getElementById("aficiones").value += cliente.aficiones[i] + ", ";
+                }
+                
+                document.getElementById('calle').value = cliente.direccion.calle;
+            }  
+            });
+            
+            
+
+           
+    </script>
+</body>
+</html>
