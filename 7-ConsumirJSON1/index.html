@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch('http://localhost:5500/7-ConsumirJSON1/miCliente.json')
+            .then(response => response.json())
+            .then(cliente => alert(cliente.nombre + ' ' + cliente.apellido));
+            
+
+           
+    </script>
+</body>
+</html>

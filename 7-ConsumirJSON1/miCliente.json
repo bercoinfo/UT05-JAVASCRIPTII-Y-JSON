@@ -1,0 +1,18 @@
+{ 
+    "nombre": "Pepe",
+    "apellido": "Lopez Aguirrez",
+    "edad": 56,
+    "suscrito": true,
+    "aficiones": [
+        "leer",
+        "cantar",
+        "nadar",
+        "mtb"
+    ],
+    "direccion": {
+        "calle": "Calle Principal",
+        "numero": 123,
+        "poblacion": "Tomelloso",
+        "provincia": "Ciudad Real"
+    }
+}
