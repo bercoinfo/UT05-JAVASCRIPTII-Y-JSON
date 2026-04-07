@@ -1,0 +1,15 @@
+{
+    "remite" : {
+        "nmobre": "Alfredo Reino",
+        "email": "alf@ibium.com"
+        },
+    "destinatario" :{
+        "nombre": "Bill CLinton",
+        "email": "president@whitehouse.gov"
+    },
+    "asunto": "Hola bill",
+    "texto": {
+        "parrafo":"¿Qué tal estás?"
+        }
+
+}

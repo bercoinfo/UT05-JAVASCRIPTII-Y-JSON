@@ -1,0 +1,32 @@
+[
+    {
+    "nombre": "Jose Carlos",
+    "namcimiento": {
+        "dia": 1,
+        "mes": 5, 
+        "año": 1981},
+    "direcion": {
+        "calle": "Calle Huertas",
+        "numero": 123,
+        "poblacion": "Tomelloso",
+        "provincia": "Ciudad Real"
+        },
+    "Varon": true
+},
+{
+    "nombre": "Marcos",
+    "namcimiento": {
+        "dia": 19,
+        "mes": 4, 
+        "año": 1980},
+    "direcion": {
+        "calle": "Calle Justicia",
+        "numero": 123,
+        "poblacion": "Tomelloso",
+        "provincia": "Ciudad Real"
+        },
+    "Varon": true
+}
+
+
+]

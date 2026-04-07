@@ -1,0 +1,22 @@
+[
+{
+    "titulo": "El Gran Gatsby",
+    "autor": "F. Scott Fitzgerald",
+    "año_publicacion": 1925,
+    "genero": "Novela"
+}, 
+{
+    "titulo": "Cien Años de Soledad",
+    "autor": "Gabriel García Márquez",
+    "año_publicacion": 1967,
+    "genero": "Realismo Mágico"
+},
+{   
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "año_publicacion": 1949,
+    "genero": "Distopía"
+}
+]
+
+

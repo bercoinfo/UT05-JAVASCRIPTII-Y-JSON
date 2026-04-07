@@ -1,0 +1,32 @@
+{
+"numero": 1,
+"fecha": "2024-06-01",
+"hora": "12:30",
+"Usuario": {
+    "nombreUsuario": "Juan",
+    "NombreCompleto": "Juan Perez Fernandez",
+    "direccionEnvio": {
+        "calle": "Calle Mayor",
+        "poblacion": "Tomelloso",
+        "CodigoPostal": "13700"
+    }
+},
+"Articulos": [
+    {
+        "nombreProducto": "Raton",
+        "descripcion": "Raton con cable Logitech",
+        "precio": 19.6
+    },
+    {
+        "nombreProducto": "Teclado",
+        "descripcion": "Teclado mecanico Logitech",
+        "precio": 60.99
+    },
+     {
+        "nombreProducto": "Pantalla",
+        "descripcion": "Pantalla LED 24 pulgadas",
+        "precio": 159.99
+    }
+]
+
+}

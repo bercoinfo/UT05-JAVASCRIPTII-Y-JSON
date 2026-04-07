@@ -1,0 +1,80 @@
+[
+    {
+        "Codigo Ticket": "0001",
+        "Forma de Pago": "Tarjeta",
+        "fecha": "2024-06-01",
+        "cliente": {
+            "codigo_cliente": "0001",
+            "nombre": "Juan",
+            "primer_apellido": "Perez",
+            "segundo_apellido": "Fernandez",
+            "dni": "12345678W",
+            "telefono": {
+                "movil": "121321221",
+                "fijo": "123456789"
+            }
+        },
+        "lineas": [
+            {
+                "alquiles/compra": "alquiler",
+                "fecha de devolucion": "2024-06-10",
+                "pelicula": {
+                    "id": "0001",
+                    "titulo": "El señor de los anillos",
+                    "genero": "Fantasia",
+                    "duracion": 180,
+                    "actores principales": [
+                        "Elijah Wood",
+                        "Ian McKellen",
+                        "Viggo Mortensen"
+                    ],
+                    "Valoracion": "Muy aclamado por la critica",
+                    "portada": "laComunidad.jpg"
+                }
+            },
+            {"alquiles/compra": "alquiler",
+                "fecha de devolucion": "2024-06-10",
+                "pelicula": {
+                    "id": "0002",
+                    "titulo": "El señor de los anillos II",
+                    "genero": "Fantasia",
+                    "duracion": 180,
+                    "actores principales": [
+                        "Elijah Wood",
+                        "Ian McKellen",
+                        "Viggo Mortensen"
+                    ],
+                    "Valoracion": "Muy aclamado por la critica",
+                    "portada": "lasdostorres.jpg"
+                }}
+        ]
+    },
+    {
+        "Codigo Ticket": "0002",
+        "Forma de Pago": "Efectivo",
+        "fecha": "2024-06-01",
+        "cliente": {
+            "codigo_cliente": "0002",
+            "nombre": "Maria",
+            "primer_apellido": "Gomez",
+            "segundo_apellido": "Lopez",
+            "dni": "87654321X",
+            "telefono": {
+                "movil": "987654321",
+                "fijo": "123456789"
+            }
+        },
+        "lineas": [
+            {
+                "alquiles/compra": "compra",
+                "DVD/VHS": "DVD",
+                "DVD": {
+                    "id": "0003",
+                    "titulo": "El señor de los anillos III",
+                    "extras": "Si"
+                }
+                }
+        ]
+    }
+
+]

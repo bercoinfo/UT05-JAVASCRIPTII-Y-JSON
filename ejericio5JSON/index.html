@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumos de Json</title>
+    <style>
+        * { font-family: Arial, Helvetica, sans-serif}
+        h1 {
+            color: #2ccf3a;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 5.B.3 - Consumir un JSON</h1>
+
+    <div id="listalibros">
+
+    </div>
+    <script>
+        fetch('libros.json')
+            .then(response => response.json())
+            .then(libros => {
+                document.getElementById('listalibros').innerHTML = '<h2>Libros:</h2>';
+                libros.forEach(libro => {
+                    document.getElementById('listalibros').innerHTML += "<strong>Título:</strong>"+ libro.titulo  + "<br>";
+                    document.getElementById('listalibros').innerHTML += "<strong>Autor:</strong> " + libro.autor + "<br>";
+                    document.getElementById('listalibros').innerHTML += "<strong>Año de publicación:</strong> " + libro.año_publicacion + "<br>";
+                    document.getElementById('listalibros').innerHTML += "<strong>Género:</strong> " + libro.genero + "<br><br>";
+                });
+                
+            })
+            .catch(error => console.error('Error al obtener los datos:', error));
+    </script>
+</body>
+</html>

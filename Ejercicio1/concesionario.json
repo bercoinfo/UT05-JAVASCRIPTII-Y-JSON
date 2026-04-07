@@ -1,0 +1,101 @@
+[
+    {
+        "nombre": "Tu Choche",
+        "direccion": {
+            "calle": "Calle Principal",
+            "numero": 123,
+            "poblacion": "Tomelloso",
+            "provincia": "Ciudad Real"
+        },
+        "telefonos": [
+            {
+                "tipo": "movil",
+                "numero": "123456789"
+            },
+            {
+                "tipo": "fijo",
+                "numero": "926654321"
+            }
+        ],
+        "vehiculos": [
+            {
+                "matricula": "1234 ABC",
+                "Turismo/Furgoneta": "Turismo",
+                "caracteristicas": {
+                    "modelo": "Ibiza",
+                    "cilindrada": "1.2",
+                    "combustible": "Gasolinaa",
+                    "color": "Blanco",
+                    "asegurado": true
+                }
+            },
+            {
+                "matricula": "5678 DEF",
+                "Turismo/Furgoneta": "Furgoneta",
+                "caracteristicas": {
+                    "modelo": "Transit",
+                    "cilindrada": "2.0",
+                    "combustible": "Diesel",
+                    "color": "Negro",
+                    "asegurado": false
+                }
+            },
+             {
+                "matricula": "9012 GHI",
+                "Turismo/Furgoneta": "Turismo",
+                "caracteristicas": {
+                    "modelo": "Golf GTI",
+                    "cilindrada": "2.4",
+                    "combustible": "Gasolina",
+                    "color": "Rojo",
+                    "asegurado": true
+                }
+            }
+
+        ]
+    },
+    {
+        "nombre": "Car and Car",
+        "direccion": {
+            "calle": "Almagro",
+            "numero": 123,
+            "poblacion": "Alcala de Heneres",
+            "provincia": "Madrid"
+        },
+        "telefonos": [
+            {
+                "tipo": "movil",
+                "numero": "123456789"
+            },
+            {
+                "tipo": "fijo",
+                "numero": "917654321"
+            }
+        ],
+        "vehiculos": [
+            {
+                "matricula": "9999 ABC",
+                "Turismo/Furgoneta": "Turismo",
+                "caracteristicas": {
+                    "modelo": "Tivoli",
+                    "cilindrada": "1.6",
+                    "combustible": "Diesel",
+                    "color": "Azul",
+                    "asegurado": true
+                }
+            },
+             {
+                "matricula": "6985 GHI",
+                "Turismo/Furgoneta": "Turismo",
+                "caracteristicas": {
+                    "modelo": "A3",
+                    "cilindrada": "1.3",
+                    "combustible": "Diesel",
+                    "color": "Amarillo",
+                    "asegurado": true
+                }
+            }
+
+        ]
+    }
+]
