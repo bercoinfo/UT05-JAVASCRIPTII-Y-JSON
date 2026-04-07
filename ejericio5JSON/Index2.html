@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="">
+    <p><label for="">Título: <input type="text" name="titulo" id="titulo"></label></p>
+    <p><label for="">Autor: <input type="text" name="autor" id="autor"></label></p>
+    <p><label for="">Año de publicación: <input type="text" name="año_publicacion" id="año_publicacion"></label></p>
+    <p><label for="">Género: <input type="text" name="genero" id="genero"></label></p>
+    <button type="button" onclick="cargarLibro()">Cargar Libro</button>
+
+
+</form>
+
+    <script>
+        let nlibro = 0;
+        function cargarLibro(){
+        fetch('libros.json')
+            .then(response => response.json())
+            .then(libro => {
+                console.log(libro);
+                
+                  document.getElementById('titulo').value = libro[nlibro].titulo;
+                document.getElementById('autor').value = libro[nlibro].autor;
+                document.getElementById('año_publicacion').value = libro[nlibro].año_publicacion;
+                document.getElementById('genero').value = libro[nlibro].genero;
+                if( nlibro >= libro.length - 1){
+                    nlibro = 0;
+                } else {
+                    nlibro++;
+                }
+            })
+            .catch(error => console.error('Error al obtener los datos:', error));
+        }
+        
+
+    </script>
+</body>
+</html>
