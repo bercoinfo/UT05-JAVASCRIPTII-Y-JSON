@@ -1,0 +1,6 @@
+ [
+          { "nombre": "Mbappe", "edad": 28, "ficha": 200000, "foto": "Mbappe.jpg" },
+          { "nombre": "Valverde", "edad": 32, "ficha": 100000, "foto": "Valverde.jpg" },
+          { "nombre": "Carvajal", "edad": 33, "ficha": 150000, "foto": "Carvajal.jpg" },
+          { "nombre": "Modric", "edad": 38, "ficha": 120000, "foto": "Modric.jpg" }
+        ]
